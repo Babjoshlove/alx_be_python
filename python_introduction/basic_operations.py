@@ -1,13 +1,12 @@
-from arithmetic_operations import perform_operation
+#define the variables
+number1 = 10
+number2 = 5
+#perform the operations
+sum_result = number1 + number2
+difference_result = number1 - number2
+product_result = number1 * number2
 
-def main():
-    print("Arithmetic Operations")
-    num1 = float(input("Enter the first number: "))
-    num2 = float(input("Enter the second number: "))
-    operation = input("Enter the operation (add, subtract, multiply, divide): ").strip().lower()
-
-    result = perform_operation(num1, num2, operation)
-    print(f"Result: {result}")
-
-if __name__ == "__main__":
-    main()
+#print the operations
+print(f"Addition of {number1} and {number2} is {sum_result}")
+print(f"Subtraction of {number1} and {number2} is {difference_result}")
+print(f"Multiplication of {number1} and {number2} is {product_result}")
